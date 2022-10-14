@@ -21,7 +21,7 @@ export const emailRegistro = async (datos) => {
         text: "Comprueba tu cuenta en Uptask",
         html: ` <p>Hola: ${nombre}, Comprueba tu cuenta en Uptask</p>
             <p>Tu cuenta ya está casi lista, solo debes comprobarla en el siguiente enlace: </p>    
-                <a href="${process.env.FRONTEND_URL3}/confirmar/${token}" style="width: 220px; height: 220px; padding: 10px; color: #fff; background: #0000ff; cursor: pointer;  border-radius: 10px; text-decoration: none;">Comprobar Cuenta</a>
+                <a href="${process.env.FRONTEND_URL}/confirmar/${token}" style="width: 220px; height: 220px; padding: 10px; color: #fff; background: #0000ff; cursor: pointer;  border-radius: 10px; text-decoration: none;">Comprobar Cuenta</a>
             <p>Si tu no creaste esta cuenta, puedes ignorar el mensaje</p>
         `
     })
@@ -48,7 +48,7 @@ export const emailForgotPassword = async (datos) => {
         text: "Restablece tu Password",
         html: ` <p>Hola: ${nombre}, has solicitado Restablecer tu Password</p>
             <p>Haz clic al siguiente enlace para Restablecer tu Password: </p>    
-                <a href="${process.env.FRONTEND_URL3}/forgot-password/${token}" style="width: 220px; height: 220px; padding: 10px; color: #fff; background: #0000ff; cursor: pointer;  border-radius: 10px; text-decoration: none;">Restablecer Password</a>
+                <a href="${process.env.FRONTEND_URL}/forgot-password/${token}" style="width: 220px; height: 220px; padding: 10px; color: #fff; background: #0000ff; cursor: pointer;  border-radius: 10px; text-decoration: none;">Restablecer Password</a>
             <p>Si no solicitaste Restablecer tu Password, puedes ignorar el mensaje</p>
         `
     })
